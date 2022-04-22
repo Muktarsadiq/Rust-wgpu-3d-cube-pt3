@@ -220,6 +220,7 @@ impl State {
                 bias: wgpu::DepthBiasState::default(),
             }),
             multisample: wgpu::MultisampleState::default(),
+            multiview: None,
         });
 
         let vertex_buffer = init.device.create_buffer_init(&wgpu::util::BufferInitDescriptor {
